@@ -1,14 +1,82 @@
-﻿body
-{background-color:darkgreen;
- font-family: Segoe, Verdana, sans-serif;}
-header  {background-color:limegreen;}
-h1{color:black;}
-h2{color:white;}
-nav > ul {line-height:2em;
-          list-style-type: none;
-          padding-left:5px;}
+﻿html {
+    height: 100%;
+}
 
-section {background-color:forestgreen;
-         width:75%;
-         font-size:1.2em;}
-footer {background-color:limegreen;}
+body {
+    min-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: darkgreen;
+    font-family: Segoe, Verdana, sans-serif;
+}
+
+header {
+    background-color: limegreen;
+    text-align: center;
+    padding: 10px 0;
+}
+
+h1 {
+    color: black;
+    margin: 0;
+}
+
+h2 {
+    color: white;
+}
+
+nav {
+    background-color: limegreen;
+    padding: 10px 0;
+    text-align: center;
+}
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        display: inline;
+        margin: 0 15px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+
+        nav a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: darkgreen;
+}
+
+.twoColumnLayout {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+#leftColumn, #rightColumn {
+    display: table-cell;
+    vertical-align: top;
+    padding: 20px;
+    background-color: darkgreen;
+    color: white;
+}
+
+footer {
+    background-color: limegreen;
+    text-align: center;
+    padding: 10px 0;
+}
